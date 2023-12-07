@@ -45,53 +45,45 @@ class _DemoPageState extends State<DemoPage> {
             "Welcher Flutter-YouTuber ist der coolste?",
             style: TextStyle(fontSize: 20),
           ),
-          ListTile(
-            leading: Radio<String>(
-              value: _radioGroupOptions[0],
-              groupValue: _selectedValue,
-              onChanged: (value) {
-                setState(() {
-                  _selectedValue = value!;
-                });
-              },
-            ),
-            title: const Text('Binärverkehr'),
+          RadioListTile(
+            title: const Text("Binärverkehr"),
+            value: _radioGroupOptions[0],
+            groupValue: _selectedValue,
+            onChanged: (value) {
+              setState(() {
+                _selectedValue = value!;
+              });
+            },
           ),
-          ListTile(
-            leading: Radio(
-              value: _radioGroupOptions[1],
-              groupValue: _selectedValue,
-              onChanged: (value) {
-                setState(() {
-                  _selectedValue = value!;
-                });
-              },
-            ),
-            title: const Text('Reso Coder'),
+          RadioListTile(
+            title: const Text("Reso Coder"),
+            value: _radioGroupOptions[1],
+            groupValue: _selectedValue,
+            onChanged: (value) {
+              setState(() {
+                _selectedValue = value!;
+              });
+            },
           ),
-          ListTile(
-            leading: Radio(
-              value: _radioGroupOptions[2],
-              groupValue: _selectedValue,
-              onChanged: (value) {
-                setState(() {
-                  _selectedValue = value!;
-                });
-              },
-            ),
-            title: const Text('Flutter Explained'),
+          RadioListTile(
+            title: const Text("Flutter Explained"),
+            value: _radioGroupOptions[2],
+            groupValue: _selectedValue,
+            onChanged: (value) {
+              setState(() {
+                _selectedValue = value!;
+              });
+            },
           ),
-          ListTile(
-            leading: Radio(
-              value: _radioGroupOptions[3],
-              groupValue: _selectedValue,
-              onChanged: (value) {
-                setState(() {
-                  _selectedValue = value!;
-                });
-              },
-            ),
-            title: const Text('Flutter'),
+          RadioListTile(
+            title: const Text("Flutter"),
+            value: _radioGroupOptions[3],
+            groupValue: _selectedValue,
+            onChanged: (value) {
+              setState(() {
+                _selectedValue = value!;
+              });
+            },
           ),
           ElevatedButton(
             onPressed: () {
